@@ -8,19 +8,21 @@ operation = input("Choose the operation (+, -, *, /): ")
 match operation:
   case "+":
     result = num1 + num2
-    print(f"The sum of {num1} and {num2} is {result}")
+    print(f"result is {result}")
   case "-":
     result = num1 - num2
-    print(f"The subtraction of {num1} and {num2} is {result}")
+    print(f"result is {result}")
   case "*":
     result = num1 * num2
-    print(f"The multiplication of {num1} and {num2} is {result}")
+    print(f"result is {result}")
   case "/":
     if num2 == 0:
         print("Division by zero is not allowed")
     else:
         result = num1 / num2
-        print(f"The division of {num1} and {num2} is {result}")
+        print(f"result is {result}")
   case _:
     print("Invalid operation. Please choose from '+', '-', '*', '/'.")
+    if __name__ == "__main__":
+     main()
 
