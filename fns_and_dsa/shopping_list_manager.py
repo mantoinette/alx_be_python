@@ -1,9 +1,10 @@
 def display_menu():
-    print("Shopping List Manager")
-    print("1. Add Item")
-    print("2. Remove Item")
-    print("3. View List")
-    print("4. Exit")
+    print(f"Shopping List Manager")  # Use f-string for title
+    print(f"1. Add Item")  # Use f-string for menu option 1
+    print(f"2. Remove Item")  # Use f-string for menu option 2
+    print(f"3. View List")  # Use f-string for menu option 3
+    print(f"4. Exit")  # Use f-string for menu option 4
+
 
 def main():
     shopping_list = []
