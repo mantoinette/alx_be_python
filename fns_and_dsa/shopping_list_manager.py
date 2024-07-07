@@ -13,9 +13,10 @@ def main():
     choice = input("Enter your choice: ").strip()
 
     if choice == '1':
-      item_name = input(f"Enter the item to add: ")  # Use f-string for prompt
-      shopping_list.append(item_name)
-      print(f"{item_name} added to the list!")
+  item_name = input(f"Enter the item to add: ")  # Use f-string for prompt
+  shopping_list.append(item_name)
+  print(f"{item_name} added to the list!")
+
 
     elif choice == '2':
       item = input("Enter the item name to remove: ").strip()
