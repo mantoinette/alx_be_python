@@ -2,7 +2,7 @@
 
 # Define global conversion factors with consistent indentation
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9  # Factor to convert Fahrenheit to Celsius
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9/ 5  # Factor to convert Celsius to Fahrenheit
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5  # Factor to convert Celsius to Fahrenheit
 
 def convert_to_celsius(fahrenheit):
     """Converts a temperature from Fahrenheit to Celsius.
@@ -30,7 +30,12 @@ def main():
     while True:
         try:
             # Get user input for temperature and unit (handle potential errors)
-            temperature = float(input("Enter the temperature to convert: "))
+            try:
+                temperature = float(input("Enter the temperature to convert: "))
+            except ValueError:
+                print("Invalid input: Please enter a numeric value.")
+                continue
+
             unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
 
             # Call appropriate conversion function based on unit
@@ -50,7 +55,7 @@ def main():
             break  # Exit loop after successful conversion
 
         except ValueError as e:
-            print("Invalid temperature. Please enter a numeric value.")
+            print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
