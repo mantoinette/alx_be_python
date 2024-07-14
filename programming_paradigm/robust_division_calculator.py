@@ -1,7 +1,5 @@
 # robust_division_calculator.py
 
-print("robust_division_calculator.py is loaded")  # Debugging statement
-
 def safe_divide(numerator, denominator):
     try:
         num = float(numerator)  # Convert numerator to float
