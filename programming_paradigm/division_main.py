@@ -1,7 +1,7 @@
 # division_main.py
 
 import sys
-from robust_division_calculator import safe_divide  # Import the safe_divide function from robust_division_calculator.py
+from robust_division_calculator import safe_divide  # Import the safe_divide function
 
 def main():
     if len(sys.argv) != 3:
